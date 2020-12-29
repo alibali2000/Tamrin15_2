@@ -25,4 +25,13 @@ public class StringToIntegerTest
             Assert.fail();
         }
     }
+    @Test
+    public void convertTest_InputWithWords() {
+        try {
+            assertEquals(1234, StringToInteger.convert("a12"));
+
+        } catch (Exception e) {
+            Assert.fail();
+        }
+    }
 }
